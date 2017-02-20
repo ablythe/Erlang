@@ -2,5 +2,4 @@
 -export([reverse/1]).
 
 reverse([]) -> [];
-reverse([X]) -> [X];
-reverse([A | [B | TheRest] ]) -> reverse(TheRest) ++ [B, A].
+reverse([A | TheRest ]) -> reverse(TheRest) ++ [A].
