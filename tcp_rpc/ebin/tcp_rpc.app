@@ -6,7 +6,7 @@
   {modules, [tr_app,
              tr_sup,
              tr_server]},
-  {registered, [tr_sup]},
-  {applications, [kernal, stdlib]},
+  {registered, [tr_sup, tr_server]},
+  {applications, [kernel, stdlib]},
   {mod, {tr_app, []}}
 ]}.
